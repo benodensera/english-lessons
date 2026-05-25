@@ -1,0 +1,116 @@
+{
+    "extends": ["stylelint-config-standard"],
+    "plugins": ["stylelint-order"],
+    "declaration-empty-line-before": null,
+
+    "rules": {
+        "selector-id-pattern": null,
+
+        "order/properties-order": [
+            [
+                "content",
+                "position",
+                "inset",
+                "top",
+                "right",
+                "bottom",
+                "left",
+                "z-index",
+                "isolation",
+
+                "display",
+                "visibility",
+                "overflow",
+                "overflow-x",
+                "overflow-y",
+                "clip-path",
+                "pointer-events",
+
+                "flex",
+                "flex-grow",
+                "flex-shrink",
+                "flex-basis",
+                "flex-direction",
+                "flex-wrap",
+                "justify-content",
+                "align-items",
+                "align-content",
+                "gap",
+
+                "grid",
+                "grid-template-columns",
+                "grid-template-rows",
+                "grid-column",
+                "grid-row",
+
+                "box-sizing",
+                "width",
+                "min-width",
+                "max-width",
+                "height",
+                "min-height",
+                "max-height",
+                "aspect-ratio",
+
+                "padding",
+                "padding-top",
+                "padding-right",
+                "padding-bottom",
+                "padding-left",
+
+                "margin",
+                "margin-top",
+                "margin-right",
+                "margin-bottom",
+                "margin-left",
+
+                "object-fit",
+                "object-position",
+
+                "font-family",
+                "font-size",
+                "font-weight",
+                "font-style",
+                "line-height",
+                "letter-spacing",
+                "text-align",
+                "text-transform",
+                "text-decoration",
+                "white-space",
+                "color",
+
+                "cursor",
+                "user-select",
+
+                "background",
+                "background-color",
+                "background-image",
+                "background-size",
+                "background-position",
+                "background-repeat",
+
+                "border",
+                "border-width",
+                "border-style",
+                "border-color",
+                "border-radius",
+                "outline",
+
+                "opacity",
+                "mix-blend-mode",
+                "backdrop-filter",
+                "filter",
+                "box-shadow",
+
+                "transform",
+                "transform-origin",
+                "rotate",
+                "scale",
+                "translate",
+                "transition",
+                "animation",
+                "will-change"
+            ]
+        ]
+    }
+}
