@@ -710,7 +710,6 @@ footer {
     font-family: "Montserrat", sans-serif;
 }
 
-
 /* print */
 
 @media print {
@@ -727,3 +726,40 @@ footer {
         display: none;
     }
 }
+
+/* tooltip styles */
+
+.pron-tooltip {
+  position: absolute;
+  display: none;
+  z-index: 9999;
+  max-width: 240px;
+  padding: 8px 12px;
+  margin: -35px auto;
+  border-radius: 10px;
+  background: #111827;
+  color: #fff;
+  font-size: 13px;
+  line-height: 1.3;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.18);
+  pointer-events: none;
+  transform: translate(-50%, -12px);
+  white-space: normal;
+}
+
+.pron-tooltip::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -6px;
+  transform: translateX(-50%);
+  border-width: 6px 6px 0 6px;
+  border-style: solid;
+  border-color: #111827 transparent transparent transparent;
+}
+
+.pron-tooltip.show {
+  display: block;
+}
+
+
